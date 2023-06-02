@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="robot" class="com.khadri.spring.core.HumanRobot">
+     <property name="name" value="CHITTI"/>
+     <property name="head"  ref="head"/>
+     <property name="legs" ref="legs"/>
+     <property name="hands" ref="hands"/>
+     <property name="boltsAndScrews">
+        <list>
+           <value>10</value>
+           <value>20</value>
+           <value>30</value>
+        </list>
+     </property>
+   </bean>
+
+   <bean id="head" class="com.khadri.spring.core.Head"/>
+   <bean id="legs" class="com.khadri.spring.core.Legs"/>
+   <bean id="hands" class="com.khadri.spring.core.Hands"/>
+
+
+</beans>
