@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="employee" class="com.khadri.spring.core.di.exclude.zero.arg.constructor.Employee">
+    <!-- configure the values for properties-->
+        <property name="empId" value="10" />
+        <constructor-arg value="20" />
+    </bean>
+</beans>

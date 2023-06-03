@@ -4,7 +4,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <bean id="robot" class="com.khadri.spring.core.HumanRobot">
+   <bean id="robot" class="com.khadri.spring.core.di.human.HumanRobot">
      <property name="name" value="CHITTI"/>
      <property name="head"  ref="head"/>
      <property name="legs" ref="legs"/>
@@ -18,9 +18,9 @@
      </property>
    </bean>
 
-   <bean id="head" class="com.khadri.spring.core.Head"/>
-   <bean id="legs" class="com.khadri.spring.core.Legs"/>
-   <bean id="hands" class="com.khadri.spring.core.Hands"/>
+   <bean id="head" class="com.khadri.spring.core.di.human.Head"/>
+   <bean id="legs" class="com.khadri.spring.core.di.human.Legs"/>
+   <bean id="hands" class="com.khadri.spring.core.di.human.Hands"/>
 
 
 </beans>

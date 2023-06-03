@@ -1,4 +1,4 @@
-package com.khadri.spring.core;
+package com.khadri.spring.core.di.human;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

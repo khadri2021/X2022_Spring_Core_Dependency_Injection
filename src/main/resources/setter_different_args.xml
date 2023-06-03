@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     <bean id="laptop" class="com.khadri.spring.core.di.setter.different.args.Laptop">
+         <property name="model" value="HP_i7"/>
+         <property name="keyBoard" ref="keyboard"/>
+     </bean>
+
+    <bean id="keyboard" class="com.khadri.spring.core.di.setter.different.args.KeyBoard">
+        <property name="numericKeys">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>4</value>
+                <value>9</value>
+            </set>
+        </property>
+        <property name="alphaKeys">
+            <set>
+                <value>A</value>
+                <value>F</value>
+                <value>D</value>
+                <value>E</value>
+                <value>R</value>
+            </set>
+
+
+        </property>
+    </bean>
+
+</beans>

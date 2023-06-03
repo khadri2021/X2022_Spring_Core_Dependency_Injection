@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="phone" class="com.khadri.spring.core.di.constructor.different.args.Phone">
+
+        <!--  Develop is responsible to take are of order if no index,type and name-->
+
+        <!--         <constructor-arg value="red" />-->
+        <!--         <constructor-arg ref="sim" />-->
+        <!--         <constructor-arg value="IPHONE" />-->
+        <!--         <constructor-arg value="12345" />-->
+        <!--         <constructor-arg value="800000.09" />-->
+
+
+        <!-- index based constructor initialization -->
+
+        <!--         <constructor-arg value="red" index="2"/>-->
+        <!--         <constructor-arg ref="sim" index="0"/>-->
+        <!--         <constructor-arg value="IPHONE" index="1"/>-->
+        <!--         <constructor-arg value="12345" index="3"/>-->
+        <!--         <constructor-arg value="800000.09" index="4"/>-->
+
+
+       <!-- type based constructor initialization -->
+
+<!--        <constructor-arg value="red" type="String"/>-->
+<!--        <constructor-arg ref="sim" type="Sim"/>-->
+<!--        <constructor-arg value="IPHONE" type="String"/>-->
+<!--        <constructor-arg value="12345" type="int"/>-->
+<!--        <constructor-arg value="800000.09" type="double"/>-->
+
+
+                <constructor-arg value="red" name="color"/>
+                <constructor-arg ref="sim" name="sim"/>
+                <constructor-arg value="IPHONE" name="name"/>
+                <constructor-arg value="12345" name="imei"/>
+                <constructor-arg value="800000.09" name="cost"/>
+
+
+    </bean>
+
+    <bean id="sim" class="com.khadri.spring.core.di.constructor.different.args.Sim"/>
+</beans>
